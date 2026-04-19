@@ -1,0 +1,15 @@
+{
+  "run_id": "LunarLander-v3__DQN__exploration_fraction=0.1_gamma=0.99_learning_rate=0.0003__s0",
+  "env": "LunarLander-v3",
+  "algo": "DQN",
+  "seed": 0,
+  "hparams": {
+    "learning_rate": 0.0003,
+    "exploration_fraction": 0.1,
+    "gamma": 0.99
+  },
+  "mean_reward": -31.3387,
+  "std_reward": 80.3388,
+  "timesteps": 300000,
+  "saved_at": "2026-04-19T12:06:10"
+}

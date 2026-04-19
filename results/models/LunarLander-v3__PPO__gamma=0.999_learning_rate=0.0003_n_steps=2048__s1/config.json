@@ -1,0 +1,15 @@
+{
+  "run_id": "LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0003_n_steps=2048__s1",
+  "env": "LunarLander-v3",
+  "algo": "PPO",
+  "seed": 1,
+  "hparams": {
+    "learning_rate": 0.0003,
+    "n_steps": 2048.0,
+    "gamma": 0.999
+  },
+  "mean_reward": 254.2467,
+  "std_reward": 21.2146,
+  "timesteps": 300000,
+  "saved_at": "2026-04-19T11:30:56"
+}

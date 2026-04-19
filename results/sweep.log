@@ -1,0 +1,301 @@
+09:27:52  Checking environments...
+09:27:52    ✓  CartPole-v1
+09:27:52    ✗  LunarLander-v2 — SKIPPED: Environment version v2 for `LunarLander` is deprecated. Please use `LunarLander-v3` instead.
+09:27:52        → LunarLander needs box2d. Fix with:
+          pip install swig
+          pip install gymnasium[box2d]
+        Then rerun — completed runs are skipped automatically.
+09:27:52    ✓  Acrobot-v1
+09:27:52  
+09:27:52  =================================================================
+09:27:52    RL SWEEP — PRE-FLIGHT SUMMARY
+09:27:52    Started   : 2026-04-19 09:27:52
+09:27:52    Workers   : 11  (of 12 logical CPUs)
+09:27:52  
+09:27:52    Environments and planned runs:
+09:27:52      CartPole-v1            150k steps  PPO×24 + DQN×24 = 48 runs
+09:27:52      Acrobot-v1             300k steps  PPO×24 + DQN×0 = 24 runs
+09:27:52  
+09:27:52    Total planned : 72
+09:27:52    Already done  : 0  (skipped)
+09:27:52    To run now    : 72
+09:27:52  =================================================================
+09:27:52  
+09:28:41  Checking environments...
+09:28:41    ✓  CartPole-v1
+09:28:41    ✗  LunarLander-v2 — SKIPPED: Environment version v2 for `LunarLander` is deprecated. Please use `LunarLander-v3` instead.
+09:28:41        → LunarLander needs box2d. Fix with:
+          pip install swig
+          pip install gymnasium[box2d]
+        Then rerun — completed runs are skipped automatically.
+09:28:41    ✓  Acrobot-v1
+09:28:41  
+09:28:41  =================================================================
+09:28:41    RL SWEEP — PRE-FLIGHT SUMMARY
+09:28:41    Started   : 2026-04-19 09:28:41
+09:28:41    Workers   : 11  (of 12 logical CPUs)
+09:28:41  
+09:28:41    Environments and planned runs:
+09:28:41      CartPole-v1            150k steps  PPO×24 + DQN×24 = 48 runs
+09:28:41      Acrobot-v1             300k steps  PPO×24 + DQN×0 = 24 runs
+09:28:41  
+09:28:41    Total planned : 72
+09:28:41    Already done  : 0  (skipped)
+09:28:41    To run now    : 72
+09:28:41  =================================================================
+09:28:41  
+09:32:31  Checking environments...
+09:32:31    ✓  CartPole-v1
+09:32:31    ✓  LunarLander-v3
+09:32:31    ✓  Acrobot-v1
+09:32:31  
+09:32:31  =================================================================
+09:32:31    RL SWEEP — PRE-FLIGHT SUMMARY
+09:32:31    Started   : 2026-04-19 09:32:31
+09:32:31    Workers   : 11  (of 12 logical CPUs)
+09:32:31  
+09:32:31    Environments and planned runs:
+09:32:31      CartPole-v1            150k steps  PPO×24 + DQN×24 = 48 runs
+09:32:31      LunarLander-v3         300k steps  PPO×24 + DQN×24 = 48 runs
+09:32:31      Acrobot-v1             300k steps  PPO×24 + DQN×0 = 24 runs
+09:32:31  
+09:32:31    Total planned : 120
+09:32:31    Already done  : 0  (skipped)
+09:32:31    To run now    : 120
+09:32:31  =================================================================
+09:32:31  
+09:48:23  [   1/120   0.8%  0.26h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (951.7s)
+09:48:24  [   2/120   1.7%  0.26h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (952.7s)
+09:48:33  [   3/120   2.5%  0.27h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (961.2s)
+09:48:33  [   4/120   3.3%  0.27h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (961.7s)
+09:48:35  [   5/120   4.2%  0.27h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (964.0s)
+09:48:37  [   6/120   5.0%  0.27h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (966.1s)
+09:48:39  [   7/120   5.8%  0.27h]  ✓ CartPole-v1        PPO   seed=1  reward=  493.10 ± 28.51  (967.2s)
+09:48:40  [   8/120   6.7%  0.27h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (968.2s)
+09:48:46  [   9/120   7.5%  0.27h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (975.0s)
+09:48:47  [  10/120   8.3%  0.27h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (975.2s)
+09:48:53  [  11/120   9.2%  0.27h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (981.5s)
+10:04:18  [  12/120  10.0%  0.53h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (954.2s)
+10:04:21  [  13/120  10.8%  0.53h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (947.8s)
+10:04:32  [  14/120  11.7%  0.53h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (958.9s)
+10:04:37  [  15/120  12.5%  0.53h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (959.0s)
+10:04:37  [  16/120  13.3%  0.53h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (973.9s)
+10:04:42  [  17/120  14.2%  0.54h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (963.5s)
+10:04:43  [  18/120  15.0%  0.54h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (963.5s)
+10:04:48  [  19/120  15.8%  0.54h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (972.7s)
+10:04:53  [  20/120  16.7%  0.54h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (965.9s)
+10:04:53  [  21/120  17.5%  0.54h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (959.9s)
+10:04:54  [  22/120  18.3%  0.54h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (968.1s)
+10:15:40  [  23/120  19.2%  0.72h]  ✓ CartPole-v1        DQN   seed=0  reward=  174.95 ± 11.37  (668.2s)
+10:15:41  [  24/120  20.0%  0.72h]  ✓ CartPole-v1        DQN   seed=1  reward=  146.40 ± 13.10  (664.8s)
+10:15:44  [  25/120  20.8%  0.72h]  ✓ CartPole-v1        DQN   seed=0  reward=  238.60 ± 36.83  (666.7s)
+10:15:44  [  26/120  21.7%  0.72h]  ✓ CartPole-v1        DQN   seed=0  reward=  176.60 ± 18.04  (660.7s)
+10:15:46  [  27/120  22.5%  0.72h]  ✓ CartPole-v1        DQN   seed=1  reward=  160.00 ± 14.28  (663.8s)
+10:15:49  [  28/120  23.3%  0.72h]  ✓ CartPole-v1        DQN   seed=1  reward=  184.00 ± 37.91  (661.3s)
+10:15:49  [  29/120  24.2%  0.72h]  ✓ CartPole-v1        DQN   seed=1  reward=  185.30 ± 37.06  (656.6s)
+10:15:50  [  30/120  25.0%  0.72h]  ✓ CartPole-v1        DQN   seed=0  reward=  162.65 ± 13.56  (657.5s)
+10:15:55  [  31/120  25.8%  0.72h]  ✓ CartPole-v1        DQN   seed=0  reward=  207.50 ± 44.03  (660.7s)
+10:18:26  [  32/120  26.7%  0.77h]  ✓ CartPole-v1        PPO   seed=0  reward=  500.00 ± 0.00  (848.1s)
+10:18:30  [  33/120  27.5%  0.77h]  ✓ CartPole-v1        PPO   seed=1  reward=  500.00 ± 0.00  (849.4s)
+10:26:24  [  34/120  28.3%  0.90h]  ✓ CartPole-v1        DQN   seed=1  reward=  125.00 ± 18.45  (644.2s)
+10:26:25  [  35/120  29.2%  0.90h]  ✓ CartPole-v1        DQN   seed=0  reward=  117.20 ± 4.52  (641.3s)
+10:26:26  [  36/120  30.0%  0.90h]  ✓ CartPole-v1        DQN   seed=0  reward=  137.35 ± 15.76  (644.5s)
+10:26:27  [  37/120  30.8%  0.90h]  ✓ CartPole-v1        DQN   seed=1  reward=  112.80 ± 10.74  (643.4s)
+10:26:30  [  38/120  31.7%  0.90h]  ✓ CartPole-v1        DQN   seed=1  reward=  176.40 ± 17.41  (644.2s)
+10:26:32  [  39/120  32.5%  0.90h]  ✓ CartPole-v1        DQN   seed=1  reward=  203.15 ± 36.27  (642.5s)
+10:26:33  [  40/120  33.3%  0.90h]  ✓ CartPole-v1        DQN   seed=0  reward=  161.55 ± 24.33  (643.6s)
+10:26:33  [  41/120  34.2%  0.90h]  ✓ CartPole-v1        DQN   seed=0  reward=   92.65 ± 1.68  (643.4s)
+10:26:40  [  42/120  35.0%  0.90h]  ✓ CartPole-v1        DQN   seed=1  reward=   77.95 ± 6.26  (644.4s)
+10:29:15  [  43/120  35.8%  0.95h]  ✓ CartPole-v1        DQN   seed=0  reward=   90.95 ± 2.56  (648.3s)
+10:29:19  [  44/120  36.7%  0.95h]  ✓ CartPole-v1        DQN   seed=1  reward=   96.10 ± 3.08  (649.0s)
+10:37:56  [  45/120  37.5%  1.09h]  ✓ CartPole-v1        DQN   seed=0  reward=   54.90 ± 18.06  (692.4s)
+10:37:59  [  46/120  38.3%  1.09h]  ✓ CartPole-v1        DQN   seed=1  reward=   93.50 ± 3.35  (694.2s)
+10:38:00  [  47/120  39.2%  1.09h]  ✓ CartPole-v1        DQN   seed=0  reward=  233.40 ± 232.31  (694.2s)
+10:38:00  [  48/120  40.0%  1.09h]  ✓ CartPole-v1        DQN   seed=1  reward=  104.90 ± 2.77  (693.3s)
+10:58:02    ⚠  Slow run (31.5 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0001_n_steps=512__s0
+10:58:02  [  49/120  40.8%  1.43h]  ✓ LunarLander-v3     PPO   seed=0  reward=   10.11 ± 118.96  (1891.4s)
+10:58:03    ⚠  Slow run (31.5 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0001_n_steps=512__s1
+10:58:03  [  50/120  41.7%  1.43h]  ✓ LunarLander-v3     PPO   seed=1  reward=  -91.70 ± 53.48  (1891.3s)
+10:58:12    ⚠  Slow run (31.6 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0001_n_steps=512__s1
+10:58:12  [  51/120  42.5%  1.43h]  ✓ LunarLander-v3     PPO   seed=1  reward=  -69.20 ± 27.06  (1898.0s)
+10:58:19    ⚠  Slow run (31.8 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0001_n_steps=512__s0
+10:58:19  [  52/120  43.3%  1.43h]  ✓ LunarLander-v3     PPO   seed=0  reward= -122.33 ± 40.54  (1905.5s)
+10:58:38    ⚠  Slow run (32.0 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0001_n_steps=2048__s0
+10:58:38  [  53/120  44.2%  1.44h]  ✓ LunarLander-v3     PPO   seed=0  reward=  -89.53 ± 43.00  (1918.4s)
+11:01:30    ⚠  Slow run (32.3 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0001_n_steps=2048__s1
+11:01:30  [  54/120  45.0%  1.48h]  ✓ LunarLander-v3     PPO   seed=1  reward=   81.53 ± 104.40  (1935.5s)
+11:01:36    ⚠  Slow run (32.3 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0001_n_steps=2048__s0
+11:01:36  [  55/120  45.8%  1.48h]  ✓ LunarLander-v3     PPO   seed=0  reward=  -55.35 ± 60.85  (1937.2s)
+11:10:32    ⚠  Slow run (32.5 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0003_n_steps=512__s1
+11:10:32  [  56/120  46.7%  1.63h]  ✓ LunarLander-v3     PPO   seed=1  reward=  -36.64 ± 93.72  (1951.5s)
+11:10:34    ⚠  Slow run (32.6 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0003_n_steps=512__s0
+11:10:34  [  57/120  47.5%  1.63h]  ✓ LunarLander-v3     PPO   seed=0  reward= -124.30 ± 28.81  (1953.4s)
+11:10:38    ⚠  Slow run (32.6 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0003_n_steps=512__s0
+11:10:38  [  58/120  48.3%  1.64h]  ✓ LunarLander-v3     PPO   seed=0  reward=   -6.42 ± 142.48  (1958.6s)
+11:10:54    ⚠  Slow run (33.0 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0001_n_steps=2048__s1
+11:10:54  [  59/120  49.2%  1.64h]  ✓ LunarLander-v3     PPO   seed=1  reward=  -60.84 ± 35.79  (1977.5s)
+11:30:24    ⚠  Slow run (32.2 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0003_n_steps=2048__s1
+11:30:24  [  60/120  50.0%  1.96h]  ✓ LunarLander-v3     PPO   seed=1  reward=  170.20 ± 93.76  (1932.3s)
+11:30:24    ⚠  Slow run (32.3 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.0003_n_steps=2048__s0
+11:30:24  [  61/120  50.8%  1.96h]  ✓ LunarLander-v3     PPO   seed=0  reward=  165.07 ± 110.20  (1940.8s)
+11:30:35    ⚠  Slow run (32.5 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0003_n_steps=512__s1
+11:30:35  [  62/120  51.7%  1.97h]  ✓ LunarLander-v3     PPO   seed=1  reward=   20.87 ± 88.99  (1953.0s)
+11:30:44    ⚠  Slow run (32.4 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0003_n_steps=2048__s0
+11:30:44  [  63/120  52.5%  1.97h]  ✓ LunarLander-v3     PPO   seed=0  reward=   60.42 ± 123.77  (1945.8s)
+11:30:56    ⚠  Slow run (32.3 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.0003_n_steps=2048__s1
+11:30:56  [  64/120  53.3%  1.97h]  ✓ LunarLander-v3     PPO   seed=1  reward=  254.25 ± 21.21  (1937.9s)
+11:33:27    ⚠  Slow run (31.9 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s0
+11:33:27  [  65/120  54.2%  2.02h]  ✓ LunarLander-v3     PPO   seed=0  reward=  241.01 ± 23.49  (1917.0s)
+11:33:38    ⚠  Slow run (32.0 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s1
+11:33:38  [  66/120  55.0%  2.02h]  ✓ LunarLander-v3     PPO   seed=1  reward=   61.76 ± 136.60  (1922.0s)
+11:41:47    ⚠  Slow run (31.3 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=512__s0
+11:41:47  [  67/120  55.8%  2.15h]  ✓ LunarLander-v3     PPO   seed=0  reward=   67.61 ± 129.87  (1875.2s)
+11:42:01    ⚠  Slow run (31.4 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.001_n_steps=2048__s0
+11:42:01  [  68/120  56.7%  2.16h]  ✓ LunarLander-v3     PPO   seed=0  reward=  135.58 ± 121.48  (1883.5s)
+11:42:13    ⚠  Slow run (31.6 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=512__s1
+11:42:13  [  69/120  57.5%  2.16h]  ✓ LunarLander-v3     PPO   seed=1  reward=   67.69 ± 92.18  (1898.8s)
+11:42:16    ⚠  Slow run (31.4 min): LunarLander-v3__PPO__gamma=0.99_learning_rate=0.001_n_steps=2048__s1
+11:42:16  [  70/120  58.3%  2.16h]  ✓ LunarLander-v3     PPO   seed=1  reward=  147.57 ± 68.79  (1882.5s)
+11:55:42    ⚠  Slow run (25.1 min): LunarLander-v3__DQN__exploration_fraction=0.1_gamma=0.99_learning_rate=0.0001__s0
+11:55:42  [  71/120  59.2%  2.39h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -61.09 ± 13.84  (1507.0s)
+11:55:48    ⚠  Slow run (25.1 min): LunarLander-v3__DQN__exploration_fraction=0.1_gamma=0.99_learning_rate=0.0001__s1
+11:55:48  [  72/120  60.0%  2.39h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -50.14 ± 101.07  (1503.8s)
+11:55:55  [  73/120  60.8%  2.39h]  ✓ LunarLander-v3     DQN   seed=0  reward=   35.81 ± 100.04  (1499.3s)
+11:58:16  [  74/120  61.7%  2.43h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -11.02 ± 80.51  (1488.3s)
+11:58:21  [  75/120  62.5%  2.43h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -25.46 ± 34.33  (1482.3s)
+11:59:22    ⚠  Slow run (29.0 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=2048__s1
+11:59:22  [  76/120  63.3%  2.45h]  ✓ LunarLander-v3     PPO   seed=1  reward=  252.53 ± 19.44  (1737.5s)
+11:59:28    ⚠  Slow run (29.1 min): LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=2048__s0
+11:59:28  [  77/120  64.2%  2.45h]  ✓ LunarLander-v3     PPO   seed=0  reward=  246.34 ± 27.23  (1743.7s)
+12:05:40  [  78/120  65.0%  2.55h]  ✓ LunarLander-v3     DQN   seed=1  reward=   20.55 ± 115.38  (1433.0s)
+12:05:54  [  79/120  65.8%  2.56h]  ✓ LunarLander-v3     DQN   seed=0  reward=   38.13 ± 123.47  (1432.6s)
+12:06:04  [  80/120  66.7%  2.56h]  ✓ LunarLander-v3     DQN   seed=1  reward=   38.74 ± 118.99  (1431.0s)
+12:06:10  [  81/120  67.5%  2.56h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -31.34 ± 80.34  (1434.1s)
+12:19:11  [  82/120  68.3%  2.78h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -71.83 ± 34.45  (1409.3s)
+12:19:23  [  83/120  69.2%  2.78h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -50.28 ± 15.14  (1414.7s)
+12:19:26  [  84/120  70.0%  2.78h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -60.71 ± 30.57  (1410.5s)
+12:21:36  [  85/120  70.8%  2.82h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -56.63 ± 22.30  (1400.6s)
+12:21:37  [  86/120  71.7%  2.82h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -12.67 ± 83.22  (1396.6s)
+12:22:45  [  87/120  72.5%  2.84h]  ✓ LunarLander-v3     DQN   seed=0  reward=   -3.16 ± 120.73  (1403.8s)
+12:22:51  [  88/120  73.3%  2.84h]  ✓ LunarLander-v3     DQN   seed=1  reward=   99.44 ± 84.45  (1403.9s)
+12:29:28  [  89/120  74.2%  2.95h]  ✓ LunarLander-v3     DQN   seed=0  reward=    1.66 ± 147.00  (1428.0s)
+12:29:47  [  90/120  75.0%  2.95h]  ✓ LunarLander-v3     DQN   seed=1  reward=   49.73 ± 130.61  (1432.9s)
+12:29:52  [  91/120  75.8%  2.96h]  ✓ LunarLander-v3     DQN   seed=0  reward=   22.13 ± 135.34  (1428.8s)
+12:30:01  [  92/120  76.7%  2.96h]  ✓ LunarLander-v3     DQN   seed=1  reward=  109.42 ± 126.60  (1430.6s)
+12:44:41    ⚠  Slow run (25.5 min): LunarLander-v3__DQN__exploration_fraction=0.2_gamma=0.99_learning_rate=0.001__s0
+12:44:41  [  93/120  77.5%  3.20h]  ✓ LunarLander-v3     DQN   seed=0  reward=  -30.65 ± 21.67  (1530.5s)
+12:44:49    ⚠  Slow run (25.4 min): LunarLander-v3__DQN__exploration_fraction=0.2_gamma=0.99_learning_rate=0.001__s1
+12:44:49  [  94/120  78.3%  3.20h]  ✓ LunarLander-v3     DQN   seed=1  reward=   58.27 ± 108.39  (1526.2s)
+12:44:55    ⚠  Slow run (25.5 min): LunarLander-v3__DQN__exploration_fraction=0.2_gamma=0.999_learning_rate=0.001__s0
+12:44:55  [  95/120  79.2%  3.21h]  ✓ LunarLander-v3     DQN   seed=0  reward=   49.17 ± 125.57  (1529.1s)
+12:47:32    ⚠  Slow run (25.9 min): LunarLander-v3__DQN__exploration_fraction=0.2_gamma=0.999_learning_rate=0.001__s1
+12:47:32  [  96/120  80.0%  3.25h]  ✓ LunarLander-v3     DQN   seed=1  reward=  -67.61 ± 45.60  (1555.8s)
+12:51:40    ⚠  Slow run (30.1 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0001_n_steps=512__s0
+12:51:40  [  97/120  80.8%  3.32h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -85.80 ± 16.44  (1803.1s)
+12:52:59    ⚠  Slow run (30.2 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0001_n_steps=512__s1
+12:52:59  [  98/120  81.7%  3.34h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -79.80 ± 12.46  (1813.4s)
+12:53:07    ⚠  Slow run (30.3 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0001_n_steps=512__s0
+12:53:07  [  99/120  82.5%  3.34h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -86.65 ± 27.04  (1816.0s)
+13:00:30    ⚠  Slow run (31.0 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0001_n_steps=512__s1
+13:00:30  [ 100/120  83.3%  3.47h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -79.25 ± 7.38  (1861.9s)
+13:00:36    ⚠  Slow run (30.8 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0001_n_steps=2048__s0
+13:00:36  [ 101/120  84.2%  3.47h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -79.15 ± 4.30  (1849.3s)
+13:00:44    ⚠  Slow run (30.9 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0001_n_steps=2048__s1
+13:00:44  [ 102/120  85.0%  3.47h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -77.80 ± 5.64  (1851.4s)
+13:00:48    ⚠  Slow run (30.8 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0001_n_steps=2048__s0
+13:00:48  [ 103/120  85.8%  3.47h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -85.90 ± 40.74  (1847.0s)
+13:16:16    ⚠  Slow run (31.6 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0001_n_steps=2048__s1
+13:16:16  [ 104/120  86.7%  3.73h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -78.30 ± 15.18  (1894.7s)
+13:16:28    ⚠  Slow run (31.7 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0003_n_steps=512__s0
+13:16:28  [ 105/120  87.5%  3.73h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -69.25 ± 7.46  (1899.5s)
+13:16:28    ⚠  Slow run (31.6 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0003_n_steps=512__s1
+13:16:28  [ 106/120  88.3%  3.73h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -74.30 ± 9.57  (1893.6s)
+13:19:03    ⚠  Slow run (31.5 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0003_n_steps=512__s0
+13:19:03  [ 107/120  89.2%  3.78h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -73.60 ± 5.76  (1891.5s)
+13:23:36    ⚠  Slow run (31.9 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0003_n_steps=512__s1
+13:23:36  [ 108/120  90.0%  3.85h]  ✓ Acrobot-v1         PPO   seed=1  reward= -500.00 ± 0.00  (1915.3s)
+13:24:43    ⚠  Slow run (31.7 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0003_n_steps=2048__s0
+13:24:43  [ 109/120  90.8%  3.87h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -80.00 ± 9.49  (1904.4s)
+13:24:55    ⚠  Slow run (31.8 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.0003_n_steps=2048__s1
+13:24:55  [ 110/120  91.7%  3.87h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -84.15 ± 36.59  (1907.8s)
+13:31:34    ⚠  Slow run (31.1 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0003_n_steps=2048__s0
+13:31:34  [ 111/120  92.5%  3.98h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -81.05 ± 24.55  (1864.2s)
+13:31:41    ⚠  Slow run (30.9 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s0
+13:31:41  [ 112/120  93.3%  3.99h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -93.35 ± 40.19  (1857.0s)
+13:31:44    ⚠  Slow run (30.9 min): Acrobot-v1__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s1
+13:31:44  [ 113/120  94.2%  3.99h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -78.40 ± 18.88  (1855.5s)
+13:31:47    ⚠  Slow run (31.2 min): Acrobot-v1__PPO__gamma=0.999_learning_rate=0.0003_n_steps=2048__s1
+13:31:47  [ 114/120  95.0%  3.99h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -73.30 ± 10.84  (1870.9s)
+13:37:18  [ 115/120  95.8%  4.08h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -81.05 ± 15.19  (1261.4s)
+13:37:23  [ 116/120  96.7%  4.08h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -82.45 ± 24.00  (1254.3s)
+13:37:26  [ 117/120  97.5%  4.08h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -74.80 ± 11.63  (1257.1s)
+13:38:01  [ 118/120  98.3%  4.09h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -70.65 ± 21.58  (1138.0s)
+13:38:57  [ 119/120  99.2%  4.11h]  ✓ Acrobot-v1         PPO   seed=0  reward=  -76.25 ± 10.54  (921.5s)
+13:39:05  [ 120/120  100.0%  4.11h]  ✓ Acrobot-v1         PPO   seed=1  reward=  -82.25 ± 24.71  (862.0s)
+13:39:05  
+13:39:05  =================================================================
+13:39:05    SWEEP COMPLETE in 4.11 hours
+13:39:05    Successful : 120  |  Failed : 0
+13:39:05    Results : C:\Users\marin\rl_project\results\runs.csv
+13:39:05    Curves  : C:\Users\marin\rl_project\results\curves.csv
+13:39:05    Models  : C:\Users\marin\rl_project\results\models
+13:39:05    → Run:  python plot_results.py
+13:39:05  =================================================================
+15:41:49  Checking environments…
+15:41:49    ✓  CartPole-v1
+15:41:49    ✓  LunarLander-v3
+15:41:49    ✓  Acrobot-v1
+15:41:49  
+15:41:49  =================================================================
+15:41:49    RL SWEEP — PRE-FLIGHT SUMMARY
+15:41:49    Started   : 2026-04-19 15:41:49
+15:41:49    Workers   : 11  (of 12 logical CPUs)
+15:41:49  
+15:41:49    Environments and planned runs:
+15:41:49      CartPole-v1            150k steps  PPO×24 + DQN×24 = 48 runs
+15:41:49      LunarLander-v3         300k steps  PPO×24 + DQN×24 = 48 runs
+15:41:49      Acrobot-v1             300k steps  PPO×24 + DQN×0 = 24 runs
+15:41:49  
+15:41:49    Total planned : 120
+15:41:49    Already done  : 120  (skipped)
+15:41:49    To run now    : 0
+15:41:49    [RESUME MODE] — picking up from previous run
+15:41:49  =================================================================
+15:41:49  
+15:41:49  Nothing to do — all runs completed. Run plot_results.py.
+15:43:01  Checking environments…
+15:43:02    ✓  CartPole-v1
+15:43:02  
+15:43:02  =================================================================
+15:43:02    RL SWEEP — PRE-FLIGHT SUMMARY
+15:43:02    Started   : 2026-04-19 15:43:02
+15:43:02    Workers   : 1  (of 12 logical CPUs)
+15:43:02  
+15:43:02    Environments and planned runs:
+15:43:02      CartPole-v1            150k steps  PPO×12 + DQN×0 = 12 runs
+15:43:02  
+15:43:02    Total planned : 12
+15:43:02    Already done  : 12  (skipped)
+15:43:02    To run now    : 0
+15:43:02    [RESUME MODE] — picking up from previous run
+15:43:02  =================================================================
+15:43:02  
+15:43:02  Nothing to do — all runs completed. Run plot_results.py.
+15:44:09  Checking environments…
+15:44:09    ✓  CartPole-v1
+15:44:09  
+15:44:09  =================================================================
+15:44:09    RL SWEEP — PRE-FLIGHT SUMMARY
+15:44:09    Started   : 2026-04-19 15:44:09
+15:44:09    Workers   : 1  (of 12 logical CPUs)
+15:44:09  
+15:44:09    Environments and planned runs:
+15:44:09      CartPole-v1            150k steps  PPO×12 + DQN×0 = 12 runs
+15:44:09  
+15:44:09    Total planned : 12
+15:44:09    Already done  : 12  (skipped)
+15:44:09    To run now    : 0
+15:44:09    [RESUME MODE] — picking up from previous run
+15:44:09  =================================================================
+15:44:09  
+15:44:09  Nothing to do — all runs completed. Run python src/plot.py.

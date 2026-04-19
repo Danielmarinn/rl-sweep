@@ -1,0 +1,15 @@
+{
+  "run_id": "Acrobot-v1__PPO__gamma=0.99_learning_rate=0.001_n_steps=2048__s0",
+  "env": "Acrobot-v1",
+  "algo": "PPO",
+  "seed": 0,
+  "hparams": {
+    "learning_rate": 0.001,
+    "n_steps": 2048.0,
+    "gamma": 0.99
+  },
+  "mean_reward": -74.8,
+  "std_reward": 11.6301,
+  "timesteps": 300000,
+  "saved_at": "2026-04-19T13:37:26"
+}

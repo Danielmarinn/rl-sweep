@@ -1,0 +1,15 @@
+{
+  "run_id": "CartPole-v1__DQN__exploration_fraction=0.1_gamma=0.999_learning_rate=0.001__s1",
+  "env": "CartPole-v1",
+  "algo": "DQN",
+  "seed": 1,
+  "hparams": {
+    "learning_rate": 0.001,
+    "exploration_fraction": 0.1,
+    "gamma": 0.999
+  },
+  "mean_reward": 96.1,
+  "std_reward": 3.0806,
+  "timesteps": 150000,
+  "saved_at": "2026-04-19T10:29:19"
+}
