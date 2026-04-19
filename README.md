@@ -28,7 +28,7 @@ One configuration — `γ=0.999, lr=3×10⁻⁴, n_steps=512` — produced a rew
 
 This is a **bootstrap cascade**: under high discount factor, short rollout horizon, and zero entropy regularisation (`ent_coef=0`), a single bad policy update produces a biased advantage estimate, which triggers a larger bad update, collapsing the policy into a degenerate local minimum before it can recover within the training budget.
 
-```
+```text
 seed=0 → reward: −73.6  ✓  (successful)
 seed=1 → reward: −500   ✗  (full collapse)
 ```
@@ -58,7 +58,7 @@ This failure mode is fully reproducible and mechanistically explained. The fix: 
 
 ## Project Structure
 
-```
+```text
 rl_sweep/
 ├── rl_sweep.py          # Parallel sweep runner with crash-safe resume
 ├── plot_results.py      # 6-plot analysis pipeline
@@ -88,11 +88,15 @@ pip install stable-baselines3[extra] gymnasium[box2d] numpy pandas matplotlib
 
 ### Run the sweep
 
-```bash
-# Full sweep — 120 runs, ~4 hours on 12 cores
-python rl_sweep.py
+Full sweep — 120 runs, ~4 hours on 12 cores:
 
-# The sweep is resumable — re-run anytime to pick up where it left off
+```bash
+python rl_sweep.py
+```
+
+The sweep is resumable — re-run anytime to pick up where it left off:
+
+```bash
 python rl_sweep.py
 ```
 
@@ -100,20 +104,28 @@ python rl_sweep.py
 
 ```bash
 python plot_results.py
-# → results/plots/*.png  (6 figures)
 ```
+
+Outputs: `results/plots/*.png` (6 figures).
 
 ### Evaluate a saved model
 
-```bash
-# Interactive picker (lists all 120 models, you choose)
-python evaluate.py
+Interactive picker (lists all 120 models, you choose):
 
-# Direct evaluation — no render, 50 episodes
+```bash
+python evaluate.py
+```
+
+Direct evaluation — no render, 50 episodes:
+
+```bash
 python evaluate.py --run_id LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=2048__s0 \
                    --no_render --n_episodes 50
+```
 
-# List all saved models
+List all saved models:
+
+```bash
 python evaluate.py --list
 ```
 
@@ -205,7 +217,7 @@ If you use this sweep framework or findings in your work:
 
 ## Dependencies
 
-```
+```text
 stable-baselines3>=2.0
 gymnasium>=0.29
 numpy>=1.24
