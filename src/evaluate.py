@@ -7,22 +7,20 @@ or runs a silent benchmark.
 Usage
 -----
     # Interactive picker (lists all saved models, you choose)
-    python evaluate.py
+    python src/evaluate.py
 
     # Direct by run_id (tab-completable with --list first)
-    python evaluate.py --run_id CartPole-v1__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s0
+    python src/evaluate.py --run_id CartPole-v1__PPO__gamma=0.99_learning_rate=0.001_n_steps=512__s0
 
     # Benchmark mode (no window, just stats)
-    python evaluate.py --no_render --n_episodes 50
+    python src/evaluate.py --no_render --n_episodes 50
 
     # List all saved models and exit
-    python evaluate.py --list
+    python src/evaluate.py --list
 
 Fixes vs original:
     - Learning rate formatting crash: hp.get('learning_rate') is None-guarded
       before applying :.0e format (was ValueError on missing keys)
-    - Added --render_mode flag so users can override 'human' to 'rgb_array'
-      for headless servers
     - episode_lengths tracked and printed in summary
     - Per-episode output suppressed in --no_render mode for cleaner CI output
 """
@@ -206,7 +204,7 @@ def main() -> None:
 
     if not models:
         print("\nNo saved models found in results/models/")
-        print("Run rl_sweep.py first, then come back here.\n")
+        print("Run python src/sweep.py first, then come back here.\n")
         sys.exit(1)
 
     if args.list:

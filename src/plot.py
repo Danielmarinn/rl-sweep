@@ -1,9 +1,9 @@
 """
-RL Sweep — Results Plotter
+RL Sweep - Results Plotter
 ==========================
-Run after rl_sweep.py finishes (or at any point for partial results):
+Run after src/sweep.py finishes (or at any point for partial results):
 
-    python plot_results.py
+    python src/plot.py
 
 Produces 6 publication-quality plots in results/plots/ and a summary table.
 
