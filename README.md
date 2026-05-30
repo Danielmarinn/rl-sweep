@@ -1,5 +1,7 @@
 # PPO vs DQN: A Systematic Hyperparameter Study
 
+![CI](https://github.com/Danielmarinn/rl-sweep/actions/workflows/ci.yml/badge.svg)
+
 > 120 training runs | 3 Gymnasium environments | 4.1 hours | one documented policy-collapse failure mode
 
 This repository contains a reproducible reinforcement learning sweep comparing **Proximal Policy Optimization (PPO)** and **Deep Q-Network (DQN)** across Gymnasium environments. The project focuses on experiment infrastructure, reproducibility, hyperparameter sensitivity, and careful interpretation of failure modes.
@@ -16,7 +18,7 @@ The sweep runner supports parallel execution, crash-safe CSV resume, determinist
 | LunarLander-v3 | DQN | 109.4 | -0.4 | 52.6 |
 | Acrobot-v1 | PPO | -69.3 | -97.0 | 86.0 |
 
-PPO solved CartPole on 23 of 24 configurations in this grid. DQN did not exceed 239 under the same training budget. LunarLander showed strong sensitivity to learning rate and discount factor. Acrobot exposed a policy-collapse failure in one PPO configuration.
+PPO achieves the maximum reward on 21/24 configurations; 23 of 24 configurations scored >= 493. DQN did not exceed 239 under the same training budget. LunarLander showed strong sensitivity to learning rate and discount factor. Acrobot exposed a policy-collapse failure in one PPO configuration.
 
 These are empirical results for this grid, budget, and two-seed setup. They should be treated as directional findings, not universal algorithm rankings.
 
@@ -36,72 +38,81 @@ The likely mechanism is a bootstrap cascade: high discount factor, short rollout
 
 | Plot | What it shows |
 | --- | --- |
-| `A_violin_ppo_vs_dqn.png` | Reward distributions across configurations. |
-| `B_seed_variance.png` | How much results vary across seeds for the same configuration. |
-| `C_lr_sensitivity.png` | Reward sensitivity to learning rate. |
-| `D_acrobot_collapse.png` | The Acrobot seed divergence and collapse. |
-| `E_gamma_effect.png` | The effect of `gamma` on delayed-reward tasks. |
-| `F_top_configs.png` | Top configurations by environment and algorithm. |
+| `results/plots/01_violin_distributions.png` | Reward distributions across all configurations per env and algo. |
+| `results/plots/02_seed_variance.png` | How much results vary across seeds for the same configuration. |
+| `results/plots/03_lr_sensitivity.png` | Reward sensitivity to learning rate. |
+| `results/plots/04_gamma_lr_lunar.png` | Gamma x LR interaction on LunarLander-v3. |
+| `results/plots/05_acrobot_collapse.png` | The Acrobot seed divergence and collapse. |
+| `results/plots/06_learning_curves.png` | Training curves: top 3 and worst config per algo and env. |
 
-![PPO vs DQN reward distributions](results/plots/A_violin_ppo_vs_dqn.png)
+![PPO vs DQN reward distributions](results/plots/01_violin_distributions.png)
 
-![Acrobot collapse](results/plots/D_acrobot_collapse.png)
+![Acrobot collapse](results/plots/05_acrobot_collapse.png)
 
-![Gamma effect](results/plots/E_gamma_effect.png)
+![Gamma effect](results/plots/04_gamma_lr_lunar.png)
 
 ## Project Structure
 
 ```text
 rl-sweep/
   src/
-    sweep.py       parallel sweep runner with crash-safe resume
-    plot.py        plot generation and result summaries
-    evaluate.py    saved-model discovery and evaluation helper
+    rlsweep/
+      __init__.py    package version
+      config.py      shared constants (paths, grids, seeds)
+      cli.py         unified CLI entry point (rl-sweep run/plot/evaluate)
+      sweep.py       parallel sweep runner with crash-safe resume
+      plot.py        plot generation and result summaries
+      evaluate.py    saved-model discovery and evaluation helper
   results/
-    runs.csv       one row per completed run (120 successful runs)
-    curves.csv     training curve snapshots
-    plots/         generated figures used in the README/report
+    runs.csv         one row per completed run (120 successful runs)
+    curves.csv       training curve snapshots
+    plots/           generated figures used in the README and report
   report/
-    report.tex     LaTeX report source
+    report.tex       LaTeX report source
   tests/
-    smoke_test.py  lightweight result consistency check
+    test_results.py     pytest suite: validate headline metrics vs runs.csv
+    test_sweep_logic.py fast unit tests for sweep functions (no SB3/gym)
+  pyproject.toml     package metadata, dependencies, tool config
+  Makefile           convenience targets: install, test, lint, format, sweep, plots, clean
 ```
 
 Saved model artifacts are generated under `results/models/` when the sweep is run locally. They are intentionally not included in this repository because they can be large and are not needed to inspect the published results.
 
 ## Quickstart
 
-Create an environment and install dependencies:
+Create an environment and install the package with development dependencies:
 
 ```bash
 python -m venv .venv
 . .venv/bin/activate
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
 On Windows, LunarLander may require SWIG before installing Box2D dependencies:
 
 ```bash
 pip install swig
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-Run the lightweight smoke test:
+Run the tests:
 
 ```bash
-python tests/smoke_test.py
+pytest
 ```
 
 Generate plots from the included CSV outputs:
 
 ```bash
-python src/plot.py
+rl-sweep plot
+# equivalent: python -m rlsweep.plot
 ```
 
 Run or resume the full sweep:
 
 ```bash
-python src/sweep.py
+rl-sweep run
+# equivalent: python -m rlsweep.sweep
 ```
 
 The full sweep is expensive: it runs 120 training jobs and took about 4.1 wall-clock hours on a 12-core CPU.
@@ -109,8 +120,8 @@ The full sweep is expensive: it runs 120 training jobs and took about 4.1 wall-c
 Evaluate a saved model after running the sweep locally:
 
 ```bash
-python src/evaluate.py --list
-python src/evaluate.py --run_id LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=2048__s0 --no_render --n_episodes 50
+rl-sweep evaluate --list
+rl-sweep evaluate --run_id LunarLander-v3__PPO__gamma=0.999_learning_rate=0.001_n_steps=2048__s0 --no_render --n_episodes 50
 ```
 
 ## Experimental Design
@@ -170,7 +181,7 @@ This gives 12 configurations per environment. With 2 seeds and 2 environments, D
 
 ```bibtex
 @misc{rl_sweep_2026,
-  author = {Marin},
+  author = {Daniel Marin},
   title  = {PPO vs DQN: A Systematic Hyperparameter Study across Gymnasium Environments},
   year   = {2026},
   url    = {https://github.com/Danielmarinn/rl-sweep}

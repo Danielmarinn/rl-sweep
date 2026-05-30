@@ -166,7 +166,7 @@ Total wall-clock time: 4.11 hours on a 12-core CPU.
 \subsection{Evaluation}
 
 \texttt{EvalCallback} snapshotted policy performance every
-$\lfloor T/10 \rfloor$ steps (5 episodes each).
+$\lfloor T/10 \rfloor$ steps (10 episodes each).
 Final evaluation used 20 episodes (CartPole, Acrobot) or 15 (LunarLander),
 all deterministic.
 
@@ -219,7 +219,7 @@ On CartPole, where reward is dense (+1 per step), this effect is absent.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../results/plots/E_gamma_effect.png}
+\includegraphics[width=\linewidth]{../results/plots/04_gamma_lr_lunar.png}
 \caption{$\gamma \times \alpha$ interaction on LunarLander-v3.
          $\gamma=0.999$ (solid) dominates $\gamma=0.99$ (dashed) at every
          learning rate for PPO.}
@@ -235,7 +235,7 @@ Two seeds are insufficient to rank configurations reliably on this task.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../results/plots/D_acrobot_collapse.png}
+\includegraphics[width=\linewidth]{../results/plots/05_acrobot_collapse.png}
 \caption{\textit{Left}: all 24 Acrobot runs; red dot = collapse.
          \textit{Right}: diverging seed trajectories for the same hyperparameters.}
 \label{fig:acrobot}
