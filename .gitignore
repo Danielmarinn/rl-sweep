@@ -13,3 +13,9 @@ logs/
 
 # Generated model checkpoints can be large. CSVs and plots remain tracked.
 results/models/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+.ruff_cache/
