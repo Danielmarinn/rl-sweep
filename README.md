@@ -177,17 +177,6 @@ This gives 12 configurations per environment. With 2 seeds and 2 environments, D
 - DQN was not evaluated on Acrobot in Phase 1.
 - SAC and TD3 would be useful off-policy comparators in a broader study.
 
-## Citation
-
-```bibtex
-@misc{rl_sweep_2026,
-  author = {Daniel Marin},
-  title  = {PPO vs DQN: A Systematic Hyperparameter Study across Gymnasium Environments},
-  year   = {2026},
-  url    = {https://github.com/Danielmarinn/rl-sweep}
-}
-```
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
